@@ -1,0 +1,31 @@
+# Alfabeto \Sigma
+1,0
+
+# Alfabeto \Gamma
+$,0,1
+
+# Numero de estados
+10
+
+# Estado inicial
+1
+
+# Estados de aceptacion
+0
+
+# Estados de rechazo
+8
+
+# Transiciones
+1,0 -> 0,0,R
+1,1 -> 2,0,R
+2,1 -> 2,1,R
+2,0 -> 3,0,R
+2,_ -> 3,0,R
+3,0 -> 4,1,L
+3,_ -> 4,1,L
+3,1 -> 3,1,R
+4,1 -> 4,1,L
+4,0 -> 5,0,L
+5,1 -> 5,1,L
+5,0 -> 1,1,R
